@@ -63,6 +63,9 @@ dkms.conf
 *.o
 *.hex
 *.bak
+*.htm
+*.m51
+
 
 # 忽略调试文件
 *.uvoptx
@@ -76,7 +79,7 @@ dkms.conf
 /Output/
 /Debug/
 /Release/
-/Objects
+/Objects/
 
 
 # 忽略用户配置文件
