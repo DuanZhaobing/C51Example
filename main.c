@@ -6,6 +6,7 @@
 void main()
 {
     while (1) {
-        LEDLoopSingle();
+        // LEDLoopSingle();
+        BuzzerInit();
     }
 }
