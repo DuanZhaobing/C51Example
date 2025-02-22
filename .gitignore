@@ -83,3 +83,4 @@ dkms.conf
 *.uvopt
 *.uvproj
 *.uvgui.*
+/.vscode
