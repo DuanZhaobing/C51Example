@@ -55,3 +55,12 @@ void SelectDigit(unsigned char digit)
     LSB = (digit >> 1) & 0x01;  // A1 = digit 的次低位
     LSC = (digit >> 2) & 0x01;  // A2 = digit 的最高位
 }
+
+void SignalNixieTube(u8 number)
+{
+    if (number != 0) {  // 如果数字不为0，则显示数字
+        number--;
+        SEGMENT_PORT = NixieSegments[number];
+        SelectDigit(0);  // 选择数码管
+    }
+}

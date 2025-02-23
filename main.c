@@ -1,4 +1,5 @@
 #include "buzzer.h"
+#include "key.h"
 #include "led.h"
 #include "nixietube.h"
 #include "reg52.h"
@@ -9,6 +10,9 @@ void main()
     while (1) {
         // LEDLoopSingle();
         // BuzzerInit();
-        NixieTubeDiaplay();
+        // NixieTubeDiaplay();
+        // KeyScan();
+        u8 number = MatrixKeyFlipScan();
+        SignalNixieTube(number);
     }
 }
